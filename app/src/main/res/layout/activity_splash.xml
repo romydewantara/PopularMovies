@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="3"
+    android:background="#ffffff"
+    tools:context="romydewantara.com.example.dyneed.popularmovies.ui.SplashActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:paddingTop="70dp">
+
+        <ImageView
+            android:id="@+id/img_splash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/glasses" />
+
+        <ProgressBar
+            android:id="@+id/progres_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_splash"
+            android:layout_marginBottom="150dp"
+            android:layout_marginTop="50dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_one"
+        android:layout_weight="1"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:id="@+id/tv_creator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Created by Romy Dewantara @2017" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_creator"
+            android:gravity="center"
+            android:text="Indonesia Android Kejar"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>
